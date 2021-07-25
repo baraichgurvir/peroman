@@ -14,6 +14,10 @@
             height: auto;
             max-height: 71px;
             z-index: 999 !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
         }
 
         .PeromanTopbarNavigation ul {
@@ -27,7 +31,7 @@
         }
 
         .PeromanTopbarNavigation ul li {
-            margin-left: 25px;
+            margin-right: 25px;
         }
 
         .PeromanTopbarNavigation ul li a {
@@ -44,7 +48,40 @@
         }
 
         .jumbotron {
-            border-radius: none !important;
+            position: fixed;
+            top: 75px;
+            left: 0;
+            right: 0;
+            z-index: 998;
+            border-radius: 0 !important;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background: #2f3640;
+        }
+
+        .jumbotron h1,
+        .jumbotron h4{
+            width: 100%;
+            text-align: center !important;
+        }
+
+        .containerBox {
+            margin-top: 295px;
+            width: 100%;
+            height: 100%;
+            background: #34495e;
+        }
+
+        .container {
+            padding: 3em;
+            color: #ffffff;
+        }
+
+        .container a {
+            color: #ffffff;;
         }
     </style>
     <title><?php bloginfo('name') ?></title>
@@ -57,6 +94,7 @@
 
 <div id="peroman_header" class="jumbotron">
     <h1><?php bloginfo('name') ?></h1>
-    <p><?php bloginfo('description') ?>.</p>
+    <h4><?php bloginfo('description') ?>.</h4>
 </div>
-<div class="container">
+<div class="containerBox">
+    <div class="container">
